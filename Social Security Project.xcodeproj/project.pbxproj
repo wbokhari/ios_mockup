@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B8C9EFB71DACB4CB00197BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9EFB61DACB4CB00197BBA /* AppDelegate.swift */; };
+		B8C9EFBE1DACB4CB00197BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8C9EFBD1DACB4CB00197BBA /* Assets.xcassets */; };
+		B8C9EFC11DACB4CB00197BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C9EFBF1DACB4CB00197BBA /* LaunchScreen.storyboard */; };
+		B8C9EFCC1DACB4CB00197BBA /* Social_Security_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9EFCB1DACB4CB00197BBA /* Social_Security_ProjectTests.swift */; };
+		B8C9EFDA1DACB6AD00197BBA /* CreateAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9EFD61DACB6AD00197BBA /* CreateAccountController.swift */; };
+		B8C9EFDB1DACB6AD00197BBA /* EarningYearEndController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9EFD71DACB6AD00197BBA /* EarningYearEndController.swift */; };
+		B8C9EFDC1DACB6AD00197BBA /* EarningYearStartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9EFD81DACB6AD00197BBA /* EarningYearStartController.swift */; };
+		B8C9EFDD1DACB6AD00197BBA /* EnterEarningYearwise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9EFD91DACB6AD00197BBA /* EnterEarningYearwise.swift */; };
+		B8C9EFE21DACB6BC00197BBA /* LandingLoginSignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9EFDE1DACB6BC00197BBA /* LandingLoginSignUpController.swift */; };
+		B8C9EFE31DACB6BC00197BBA /* LoginUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9EFDF1DACB6BC00197BBA /* LoginUserController.swift */; };
+		B8C9EFE41DACB6BC00197BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C9EFE01DACB6BC00197BBA /* Main.storyboard */; };
+		B8C9EFE51DACB6BC00197BBA /* ShowHideLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9EFE11DACB6BC00197BBA /* ShowHideLoading.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8C9EFC81DACB4CB00197BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8C9EFAB1DACB4CB00197BBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8C9EFB21DACB4CB00197BBA;
+			remoteInfo = "Social Security Project";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B8C9EFB31DACB4CB00197BBA /* Social Security Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Security Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C9EFB61DACB4CB00197BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8C9EFBD1DACB4CB00197BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8C9EFC01DACB4CB00197BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8C9EFC21DACB4CB00197BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8C9EFC71DACB4CB00197BBA /* Social Security ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Social Security ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C9EFCB1DACB4CB00197BBA /* Social_Security_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Social_Security_ProjectTests.swift; sourceTree = "<group>"; };
+		B8C9EFCD1DACB4CB00197BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8C9EFD61DACB6AD00197BBA /* CreateAccountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountController.swift; sourceTree = "<group>"; };
+		B8C9EFD71DACB6AD00197BBA /* EarningYearEndController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarningYearEndController.swift; sourceTree = "<group>"; };
+		B8C9EFD81DACB6AD00197BBA /* EarningYearStartController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarningYearStartController.swift; sourceTree = "<group>"; };
+		B8C9EFD91DACB6AD00197BBA /* EnterEarningYearwise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterEarningYearwise.swift; sourceTree = "<group>"; };
+		B8C9EFDE1DACB6BC00197BBA /* LandingLoginSignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingLoginSignUpController.swift; sourceTree = "<group>"; };
+		B8C9EFDF1DACB6BC00197BBA /* LoginUserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUserController.swift; sourceTree = "<group>"; };
+		B8C9EFE01DACB6BC00197BBA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B8C9EFE11DACB6BC00197BBA /* ShowHideLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowHideLoading.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8C9EFB01DACB4CB00197BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C9EFC41DACB4CB00197BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8C9EFAA1DACB4CB00197BBA = {
+			isa = PBXGroup;
+			children = (
+				B8C9EFB51DACB4CB00197BBA /* Social Security Project */,
+				B8C9EFCA1DACB4CB00197BBA /* Social Security ProjectTests */,
+				B8C9EFB41DACB4CB00197BBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B8C9EFB41DACB4CB00197BBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8C9EFB31DACB4CB00197BBA /* Social Security Project.app */,
+				B8C9EFC71DACB4CB00197BBA /* Social Security ProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8C9EFB51DACB4CB00197BBA /* Social Security Project */ = {
+			isa = PBXGroup;
+			children = (
+				B8C9EFB61DACB4CB00197BBA /* AppDelegate.swift */,
+				B8C9EFBD1DACB4CB00197BBA /* Assets.xcassets */,
+				B8C9EFD61DACB6AD00197BBA /* CreateAccountController.swift */,
+				B8C9EFD71DACB6AD00197BBA /* EarningYearEndController.swift */,
+				B8C9EFD81DACB6AD00197BBA /* EarningYearStartController.swift */,
+				B8C9EFD91DACB6AD00197BBA /* EnterEarningYearwise.swift */,
+				B8C9EFDE1DACB6BC00197BBA /* LandingLoginSignUpController.swift */,
+				B8C9EFDF1DACB6BC00197BBA /* LoginUserController.swift */,
+				B8C9EFE01DACB6BC00197BBA /* Main.storyboard */,
+				B8C9EFE11DACB6BC00197BBA /* ShowHideLoading.swift */,
+				B8C9EFBF1DACB4CB00197BBA /* LaunchScreen.storyboard */,
+				B8C9EFC21DACB4CB00197BBA /* Info.plist */,
+			);
+			path = "Social Security Project";
+			sourceTree = "<group>";
+		};
+		B8C9EFCA1DACB4CB00197BBA /* Social Security ProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8C9EFCB1DACB4CB00197BBA /* Social_Security_ProjectTests.swift */,
+				B8C9EFCD1DACB4CB00197BBA /* Info.plist */,
+			);
+			path = "Social Security ProjectTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8C9EFB21DACB4CB00197BBA /* Social Security Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8C9EFD01DACB4CB00197BBA /* Build configuration list for PBXNativeTarget "Social Security Project" */;
+			buildPhases = (
+				B8C9EFAF1DACB4CB00197BBA /* Sources */,
+				B8C9EFB01DACB4CB00197BBA /* Frameworks */,
+				B8C9EFB11DACB4CB00197BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Social Security Project";
+			productName = "Social Security Project";
+			productReference = B8C9EFB31DACB4CB00197BBA /* Social Security Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8C9EFC61DACB4CB00197BBA /* Social Security ProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8C9EFD31DACB4CB00197BBA /* Build configuration list for PBXNativeTarget "Social Security ProjectTests" */;
+			buildPhases = (
+				B8C9EFC31DACB4CB00197BBA /* Sources */,
+				B8C9EFC41DACB4CB00197BBA /* Frameworks */,
+				B8C9EFC51DACB4CB00197BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8C9EFC91DACB4CB00197BBA /* PBXTargetDependency */,
+			);
+			name = "Social Security ProjectTests";
+			productName = "Social Security ProjectTests";
+			productReference = B8C9EFC71DACB4CB00197BBA /* Social Security ProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8C9EFAB1DACB4CB00197BBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Sheikh Khawar";
+				TargetAttributes = {
+					B8C9EFB21DACB4CB00197BBA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					B8C9EFC61DACB4CB00197BBA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B8C9EFB21DACB4CB00197BBA;
+					};
+				};
+			};
+			buildConfigurationList = B8C9EFAE1DACB4CB00197BBA /* Build configuration list for PBXProject "Social Security Project" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8C9EFAA1DACB4CB00197BBA;
+			productRefGroup = B8C9EFB41DACB4CB00197BBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8C9EFB21DACB4CB00197BBA /* Social Security Project */,
+				B8C9EFC61DACB4CB00197BBA /* Social Security ProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8C9EFB11DACB4CB00197BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8C9EFE41DACB6BC00197BBA /* Main.storyboard in Resources */,
+				B8C9EFC11DACB4CB00197BBA /* LaunchScreen.storyboard in Resources */,
+				B8C9EFBE1DACB4CB00197BBA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C9EFC51DACB4CB00197BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8C9EFAF1DACB4CB00197BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8C9EFDD1DACB6AD00197BBA /* EnterEarningYearwise.swift in Sources */,
+				B8C9EFE51DACB6BC00197BBA /* ShowHideLoading.swift in Sources */,
+				B8C9EFDC1DACB6AD00197BBA /* EarningYearStartController.swift in Sources */,
+				B8C9EFE31DACB6BC00197BBA /* LoginUserController.swift in Sources */,
+				B8C9EFDB1DACB6AD00197BBA /* EarningYearEndController.swift in Sources */,
+				B8C9EFB71DACB4CB00197BBA /* AppDelegate.swift in Sources */,
+				B8C9EFDA1DACB6AD00197BBA /* CreateAccountController.swift in Sources */,
+				B8C9EFE21DACB6BC00197BBA /* LandingLoginSignUpController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C9EFC31DACB4CB00197BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8C9EFCC1DACB4CB00197BBA /* Social_Security_ProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8C9EFC91DACB4CB00197BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8C9EFB21DACB4CB00197BBA /* Social Security Project */;
+			targetProxy = B8C9EFC81DACB4CB00197BBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B8C9EFBF1DACB4CB00197BBA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8C9EFC01DACB4CB00197BBA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B8C9EFCE1DACB4CB00197BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8C9EFCF1DACB4CB00197BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8C9EFD11DACB4CB00197BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Social Security Project/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fast.Social-Security-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B8C9EFD21DACB4CB00197BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Social Security Project/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fast.Social-Security-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B8C9EFD41DACB4CB00197BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Social Security ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fast.Social-Security-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Social Security Project.app/Social Security Project";
+			};
+			name = Debug;
+		};
+		B8C9EFD51DACB4CB00197BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Social Security ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fast.Social-Security-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Social Security Project.app/Social Security Project";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8C9EFAE1DACB4CB00197BBA /* Build configuration list for PBXProject "Social Security Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8C9EFCE1DACB4CB00197BBA /* Debug */,
+				B8C9EFCF1DACB4CB00197BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8C9EFD01DACB4CB00197BBA /* Build configuration list for PBXNativeTarget "Social Security Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8C9EFD11DACB4CB00197BBA /* Debug */,
+				B8C9EFD21DACB4CB00197BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B8C9EFD31DACB4CB00197BBA /* Build configuration list for PBXNativeTarget "Social Security ProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8C9EFD41DACB4CB00197BBA /* Debug */,
+				B8C9EFD51DACB4CB00197BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8C9EFAB1DACB4CB00197BBA /* Project object */;
+}
