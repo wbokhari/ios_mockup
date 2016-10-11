@@ -38,12 +38,10 @@ class CreateAccountController: UIViewController {
         
      
         //Code to Check current year
-        let date = NSDate()
-        let calendar = NSCalendar.currentCalendar()
-        let components = calendar.components([.Day , .Month , .Year], fromDate: date)
-        let year =  components.year
-        
-        
+//        let date = NSDate()
+//        let calendar = NSCalendar.currentCalendar()
+//        let components = calendar.components([.Day , .Month , .Year], fromDate: date)
+        //let year =  components.year
         
         //Check Name Field
         
@@ -152,98 +150,42 @@ class CreateAccountController: UIViewController {
             var strBirthMonth : String
                 strBirthMonth = self.userBirthMonth.text!
             
-            let request = NSMutableURLRequest(URL: NSURL(string: "https://socialcalculatorevantrium.herokuapp.com/api/register")!)
+            //ShowHideLoading().showLoading()
+           
+            let url_to_request:String = "https://socialcalculatorevantrium.herokuapp.com/api/register"
+            
+            
+            
+            let url:NSURL = NSURL(string: url_to_request)!
+            let session = NSURLSession.sharedSession()
+            
+            let request = NSMutableURLRequest(URL: url)
             request.HTTPMethod = "POST"
-            let postString = "userid=\(strName)&password=\(strPassword)&email=\(strEmail)&birthyear=\(strBirthYear)&birthmonth=\(strBirthMonth)"
-            print(strEmail)
-            print("Khawar................................1")
-            ShowHideLoading().showLoading()
-            request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
-            let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
-                guard error == nil && data != nil else {                                                          // check for fundamental networking error
-                    print("error=\(error)")
+            request.cachePolicy = NSURLRequestCachePolicy.ReloadIgnoringCacheData
+            
+            let paramString = "userid=\(strName)&password=\(strPassword)&email=\(strEmail)&birthyear=\(strBirthYear)&birthmonth=\(strBirthMonth)"
+            request.HTTPBody = paramString.dataUsingEncoding(NSUTF8StringEncoding)
+            
+            let task = session.dataTaskWithRequest(request) {
+                (
+                let data, let response, let error) in
+                
+                guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
+                    print("error")
                     return
                 }
-       
-            
-                if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {           // check for http errors
-                    print("statusCode should be 200, but is \(httpStatus.statusCode)")
-                    print("response = \(response)")
-                }
                 
-                let responseString = String(data: data!, encoding: NSUTF8StringEncoding)
-                print("responseString = \(responseString)")
+                let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+                print(dataString)
+                
             }
             task.resume()
-        
-        //let myUrlforlogin:String = Global.baseURL + Global.login
-//        let myDictionary : [String:String] = ["userid" : self.userName.text!.lowercaseString,
-//                                              "password" : self.userPassword.text!,
-//                                              "email" : self.userEmail.text!,
-//                                              "birthyear" : self.userBirthYear.text!,
-//                                              "birthmonth" : self.userBirthMonth.text!
-//            
-//                                              
-//                                              
-//        ]
-//         ShowHideLoading().showLoading()
-//        let manager1 = AFHTTPSessionManager()
-//        manager1.requestSerializer = AFJSONRequestSerializer()
-//        manager1.responseSerializer = AFJSONResponseSerializer()
-//        let url = "https://socialcalculatorevantrium.herokuapp.com/api/register"
-//        manager1.POST(url, parameters: myDictionary, success: {(operation: NSURLSessionDataTask?, responseObject: AnyObject?) -> Void in
-//         
-//            print(responseObject!)
-           ShowHideLoading().hideLoading()
+            
+           
+            //ShowHideLoading().hideLoading()
             let nextViewController = self.storyboard?.instantiateViewControllerWithIdentifier("UserLogin")
             self.presentViewController(nextViewController!, animated: true, completion: nil)
-//
-//            
-//            
-//            
-//            }, failure: {(operation: NSURLSessionDataTask?, error: NSError?) -> Void in
-//                //Global.hideLoader()
-//                print(error)
-//                let statusCode = error?.code
-//                
-//                if(statusCode == 401)
-//                {
-//                    let alert = UIAlertView(title: "Unauthorized Error", message: "Access is denied due to invalid credentials.", delegate: nil, cancelButtonTitle: "OK")
-//                    alert.show()
-//                }
-//                else if (statusCode == 404)
-//                {
-//                    //                    let alert = UIAlertView(title: "Page Not Found", message: "Page could not be found on the server.", delegate: nil, cancelButtonTitle: "OK")
-//                    //                    alert.show()
-//                }
-//                else if (statusCode == NSURLErrorTimedOut)
-//                {
-//                    let alert = UIAlertView(title: "Connection timed out", message: "Please try again", delegate: nil, cancelButtonTitle: "OK")
-//                    alert.show()
-//                }
-//                else if (statusCode == -1004)
-//                {
-//                    let alert = UIAlertView(title: "Could not connect to the server", message: "Please try again", delegate: nil, cancelButtonTitle: "OK")
-//                    alert.show()
-//                }
-//                else if (statusCode == -1009)
-//                {
-//                    let alert = UIAlertView(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", delegate: nil, cancelButtonTitle: "OK")
-//                    alert.show()
-//                }
-//                else if (statusCode == 504)
-//                {
-//                    let alert = UIAlertView(title: "Request Failed", message: "Gateway time out, Please try again", delegate: nil, cancelButtonTitle: "OK")
-//                    alert.show()
-//                }
-//                else
-//                {
-//                    let alert = UIAlertView(title: "Server is not responding right now", message: "Please try again", delegate: nil, cancelButtonTitle: "OK")
-//                    alert.show()
-//                    
-//                }
-//        })
-//
+
         }
 
     }
